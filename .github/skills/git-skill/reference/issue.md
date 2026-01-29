@@ -10,9 +10,10 @@ GitHubでIssueを作成する手順です。
 ## 基本的な流れ
 
 1. Issue内容の整理（`docs/ISSUES.md`から読み取る、または手動で整理）
-2. Issueの作成
-3. Issueの詳細設定（ラベル、担当者など）
-4. （オプション）Issue番号を`docs/ISSUES.md`に紐づけ
+2. **【重要】ラベルの存在確認** - `gh label list`で利用可能なラベルを確認
+3. Issueの作成（存在するラベルのみ使用）
+4. Issueの詳細設定（ラベル、担当者など）
+5. （オプション）Issue番号を`docs/ISSUES.md`に紐づけ
 
 ## 手順
 
@@ -33,6 +34,21 @@ GitHubでIssueを作成する手順です。
    - ラベル
 
 3. Issue文書の番号とGitHub Issue番号を紐づけるため、作成後に`docs/ISSUES.md`を更新
+
+### 2. 【重要】使用可能なラベルを確認
+
+**Issue作成前に、必ず以下のドキュメントを確認してください:**
+- [ラベル定義](labels-definition.md) - 利用可能なラベル一覧（色コード付き）
+- [Conventional Commits タイプ定義](conventional-commits-types.md) - 各タイプの詳細な説明と使い分け
+
+**利用可能なラベル（クイックリファレンス）:**
+- **変更の種類**: `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`, `revert`
+- **作業項目**: `task`
+
+**重要なポイント:**
+- 存在しないラベルを指定するとエラーになります
+- 必ず[ラベル定義](labels-definition.md)から選択してください
+- 実際のリポジトリにラベルが作成されているか不確かな場合は、`gh label list`で確認してください
 
 #### パターンB: 手動で整理
 

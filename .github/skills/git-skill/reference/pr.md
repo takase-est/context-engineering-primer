@@ -183,7 +183,9 @@ gh pr merge 123 --rebase
 
 PRを作成する前に、ブランチ名がConventional Commits形式に準拠していることを確認してください。
 
-詳細は[ブランチ操作](branch.md)を参照してください。
+**詳細は以下を参照:**
+- [ブランチ操作](branch.md) - ブランチ命名規則と操作方法
+- [Conventional Commits タイプ定義](conventional-commits-types.md) - タイプの詳細な説明
 
 ### 基本形式
 
@@ -209,7 +211,9 @@ PRを作成する前に、ブランチ名がConventional Commits形式に準拠�
 
 ### 適切なラベル付け
 
-Conventional Commits形式のラベルを使用:
+Conventional Commits形式のラベルを使用します。詳細は[ラベル定義](labels-definition.md)を参照してください。
+
+**クイックリファレンス:**
 - 新機能 → `feat`
 - バグ修正 → `fix`
 - リファクタリング → `refactor`

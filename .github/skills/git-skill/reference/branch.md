@@ -10,22 +10,20 @@ Gitのブランチ操作とConventional Commits形式に準拠したブランチ
 <type>/<description>
 ```
 
-- **`<type>`**: Conventional Commits形式のタイプ
+- **`<type>`**: Conventional Commits形式のタイプ（[タイプ定義](conventional-commits-types.md)を参照）
 - **`<description>`**: 簡潔な説明（ハイフン区切り、小文字推奨）
 
 ### 使用可能なタイプ
 
+利用可能なタイプの詳細な説明と使用例については、[Conventional Commits タイプ定義](conventional-commits-types.md)を参照してください。
+
+**クイックリファレンス:**
 - `feat` - 新機能
 - `fix` - バグ修正
-- `docs` - ドキュメントのみの変更
-- `style` - コードの動作に影響しない変更
+- `docs` - ドキュメント
 - `refactor` - リファクタリング
-- `perf` - パフォーマンス改善
-- `test` - テストの追加・修正
-- `build` - ビルドシステムや外部依存関係の変更
-- `ci` - CI/CD設定やスクリプトの変更
-- `chore` - その他の変更
-- `revert` - 以前のコミットの取り消し
+- `test` - テスト
+- `style`, `perf`, `build`, `ci`, `chore`, `revert` - その他
 
 ### 命名例
 

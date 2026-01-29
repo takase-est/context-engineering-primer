@@ -1,11 +1,30 @@
 ---
 name: git-skill
-description: Conventional Commits形式に準拠したGit/GitHub運用（コミット、プッシュ、PR、Issue、ラベル管理）を支援するスキル
+description: |
+  Conventional Commits形式に準拠したGit/GitHub運用を支援するスキル。
+  以下のGit/GitHub操作が必要な時に自動的に使用：
+  - `git commit` - Conventional Commits形式でのコミット（feat:, fix:, docs:など）
+  - `git push` - リモートへのプッシュ（-uフラグ、force pushの判断）
+  - `gh pr create` - プルリクエスト作成（ブランチ命名規則、ラベル付け、DoDの確認）
+  - `gh issue create` - Issue作成（適切なラベル付け、Task IssueのDoD設定）
+  - `gh label` - ラベル管理（create, edit, delete, list）
+  - `git checkout -b` - ブランチ作成（命名規則：feat/, fix/, docs/など）
 ---
 
 # Git/GitHub運用スキル
 
 このスキルは、Conventional Commits形式に準拠した日常的なGit/GitHub操作を支援します。
+
+## いつ使うか
+
+以下のGit/GitHub操作が必要な時に自動的に使用されます：
+
+- **`git commit`**: コード変更後のコミット（Conventional Commits形式）
+- **`git push`**: リモートへのプッシュ（upstream設定、force pushの判断）
+- **`gh pr create`**: プルリクエスト作成（ブランチ命名規則、ラベル付け、DoDの確認）
+- **`gh issue create`**: Issue作成（適切なラベル付け、Task IssueのDoD設定）
+- **`gh label create/edit/delete/list`**: GitHubラベル管理
+- **`git checkout -b`**: 新規ブランチ作成（命名規則：feat/, fix/, docs/など）
 
 ## このスキルができること
 
@@ -18,6 +37,11 @@ description: Conventional Commits形式に準拠したGit/GitHub運用（コミ�
 
 各操作の詳細は以下のリファレンスを参照してください：
 
+### 基本リファレンス
+- [Conventional Commits タイプ定義](reference/conventional-commits-types.md) - タイプの詳細な説明と使い分け（すべての操作の基礎）
+- [ラベル定義](reference/labels-definition.md) - 利用可能なラベル一覧（色コード付き）
+
+### 操作リファレンス
 - [ブランチ操作](reference/branch.md) - ブランチの作成、切り替え、削除、命名規則
 - [コミット](reference/commit.md) - 変更のコミット方法
 - [プッシュ](reference/push.md) - リモートへのプッシュ方法
